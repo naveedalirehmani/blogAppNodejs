@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <div class="container mt-5">
+    <%- include('./partials/nav.ejs') %>
+    <% const about = "aLorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, incidunt sequi repudiandae consequuntur officiis eveniet labore quo unde iure quam fuga magni vitae aspernatur. Eveniet nemo quasi cupiditate impedit dolorum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, incidunt sequi repudiandae consequuntur officiis eveniet labore quo unde iure quam fuga magni vitae aspernatur. Eveniet nemo quasi cupiditate impedit dolorum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, incidunt sequi repuiandae consequuntur officiis eveniet labore quo unde iure quam fuga magni vitae aspernatur. Eveniet nemo quasi cupiditate impedit dolorum"%>
+    <div class="card text-white bg-danger mb-3 mt-5 mb-5">
+        <div class="card-header">About Us</div>
+        <div class="card-body">
+          <p class="card-text"><%= about  %> </p>
+        </div>
+      </div>
+      
+    <%- include('./partials/footer.ejs') %>
+</div>
+</body>
+</html>

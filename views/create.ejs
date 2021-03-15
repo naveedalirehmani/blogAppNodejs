@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <div class="container mt-5">
+    <%- include('./partials/nav.ejs') %>
+    <form action="/blogs" method="POST">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Blog Title</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="title">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput2" class="form-label">Blog snippet</label>
+      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="snippet" name="snippet">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea3" class="form-label">body</label>
+      <textarea class="form-control" id="exampleFormControlTextarea3" rows="3" name="body"></textarea>
+    </div>
+    <button class="btn btn-danger">Submit</button>
+  </form>
+    <%- include('./partials/footer.ejs') %>
+  </div>
+  </body>
+</html>

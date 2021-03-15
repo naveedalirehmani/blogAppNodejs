@@ -1,0 +1,9 @@
+body{
+  background-image: url(./todoist.webp);
+  background-size:cover;
+  /* background-color: red; */
+}
+.container{
+  background:rgba(0, 0, 0, 0.068);
+  /* border:1px solid red; */
+}

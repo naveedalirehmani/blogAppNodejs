@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <div class="container mt-5 p-5 " style="border-radius:10px">
+        <%- include('./partials/nav.ejs') %>
+        <div class="row">
+        <% if (blogs.length > 0 ) {%>
+            <% blogs.forEach((element)=>{%>
+            <div class="col-sm-6">
+        <div class="card text-dark bg-light mt-3" style="height: 18rem;overflow: hidden;">
+            <div class="card-body">
+                <a href="/blogs/<%= element._id %>" class="btn btn-danger mb-2">Read Full Article</a>
+                <p>Created-At : <%= element.createdAt.toLocaleString()  %></p>
+                <h5 class="card-title"><%= element.title %></h5>
+                <p class="card-text"><%= element.snippet %></p>
+            </div>
+          </div>
+        </div>
+        <% })%>
+        <% } else {%>
+            <p>there are no blogs to display</p>
+        <% } %>
+
+        <%- include('./partials/footer.ejs') %>
+    </div>
+      </div>
+</body>
+</html>
